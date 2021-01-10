@@ -1,90 +1,151 @@
-@media (min-width: 600px){
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
-    header{
-        float: left;
-        
-        width: 25%;
-    }
 
-    main{
-        display: inline-block;
-        width: 75%;
-    }
-    
-}
-
-body{
+body {
     margin: 0;
     background-color: #6495ED;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-nav{
+h1,
+h2 {
+    font-family: 'Lora', serif;
+}
+
+
+nav {
     margin: 0;
 }
 
-h1{
-    margin:0;
+h1 {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    position: relative;
+    float: right;
+    margin-right: 40px;
+    font-size: 25px;
 }
 
-ul{
-    margin:0;
+hr {
+    width: 75%;
+    margin-right: 40px;
+
 }
 
-header{
+
+ul {
+    margin: 0;
+    direction: rtl;
+}
+
+header {
     background-color: #6495ED;
-   
+    padding-bottom: 15px;
 }
 
-header a{
+header a {
     color: #FAEBD7;
     text-decoration: none;
 }
 
-header a:hover{
+header a:hover {
     color: white;
     text-decoration: underline;
 }
 
-header a:active{
+header a:active {
     color: #DEB887;
 }
 
-p a{
-    color:#6495ED;
+p a {
+    color: #6495ED;
     text-decoration: none;
 }
 
-p a:active{
+p a:active {
     color: #DEB887;
 }
 
-p a:hover{
+p a:hover {
     text-decoration: underline;
 }
 
-h2 a{
-    color:black;
+h2 a {
+    color: black;
     text-decoration: none;
 }
 
-h2 a:active{
+h2 a:active {
     color: #DEB887;
 }
 
-h2 a:hover{
+h2 a:hover {
     color: #6495ED;
     text-decoration: underline;
 }
 
-li{
+li {
     list-style: none;
+    padding: 5px;
 }
 
-main{
+main {
     background-color: #FAEBD7;
+    padding: 20px;
 }
 
-article{
+article {
     background-color: white;
-    margin:20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px #888888;    
+}
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+}
+
+@media (min-width: 800px) {
+
+    header {
+        position: relative;
+        float: left;
+        width: 25%;
+
+    }
+
+    main {
+        position: absolute;
+        display: inline-block;
+    }
+
+    h1 {
+        direction: rtl;
+    }
+
+    img {
+        width: 250px;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    main {
+        padding: 50px;
+    }
+
+    article {
+        margin-bottom: 40px;
+    }
+    
+
 }
